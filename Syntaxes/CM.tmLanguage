@@ -8,10 +8,6 @@
 	<array>
 		<string>cm</string>
 	</array>
-	<key>foldingStartMarker</key>
-	<string>\(\*</string>
-	<key>foldingStopMarker</key>
-	<string>\*\)</string>
 	<key>name</key>
 	<string>Standard ML - CM</string>
 	<key>patterns</key>

@@ -7,10 +7,6 @@
 		<string>sml</string>
 		<string>sig</string>
 	</array>
-	<key>foldingStartMarker</key>
-	<string>\(\*|\b(struct|sig)\b</string>
-	<key>foldingStopMarker</key>
-	<string>\*\)|\bend\b</string>
 	<key>keyEquivalent</key>
 	<string>^~S</string>
 	<key>name</key>
