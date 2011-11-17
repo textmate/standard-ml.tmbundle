@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>autoScrollOutput</key>
@@ -7,19 +7,43 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>require_cmd "${TM_SML:=sml}"
-"$TM_SML"|pre</string>
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+"${TM_SML:-sml}"|pre</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>@r</string>
 	<key>name</key>
 	<string>Run in SML</string>
-	<key>output</key>
-	<string>showAsHTML</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>sml</string>
+			<key>locations</key>
+			<array>
+				<string>/opt/local/bin/sml</string>
+				<string>/usr/local/bin/sml</string>
+			</array>
+			<key>variable</key>
+			<string>TM_SML</string>
+		</dict>
+	</array>
 	<key>scope</key>
 	<string>source.ml</string>
 	<key>uuid</key>
 	<string>18819157-C273-4649-9013-3A2705993795</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
