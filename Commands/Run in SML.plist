@@ -41,6 +41,8 @@
 	</array>
 	<key>scope</key>
 	<string>source.ml</string>
+	<key>semanticClass</key>
+	<string>process.run.ml</string>
 	<key>uuid</key>
 	<string>18819157-C273-4649-9013-3A2705993795</string>
 	<key>version</key>

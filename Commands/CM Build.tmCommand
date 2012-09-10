@@ -39,6 +39,8 @@ echo "CM.make \"sources.cm\";"|"${TM_SML:-sml}"|pre</string>
 	</array>
 	<key>scope</key>
 	<string>source.ml</string>
+	<key>semanticClass</key>
+	<string>process.alternate.run.ml</string>
 	<key>uuid</key>
 	<string>1EA6E877-4B4E-44EC-9118-9295A0F1432D</string>
 	<key>version</key>
