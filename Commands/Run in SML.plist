@@ -7,10 +7,12 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env bash
-[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+	<string>#!/usr/bin/env ruby18
+require ENV["TM_SUPPORT_PATH"] + "/lib/tm/executor"
 
-"${TM_SML:-sml}"|pre</string>
+TextMate::Executor.make_project_master_current_document
+TextMate::Executor.run(ENV["TM_SML"] || "sml", ENV["TM_FILEPATH"])
+</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
