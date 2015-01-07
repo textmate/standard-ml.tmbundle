@@ -214,7 +214,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\s*(type|eqtype) .* =</string>
+			<string>\b(type|eqtype) .* =</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
