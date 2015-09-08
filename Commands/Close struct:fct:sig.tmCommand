@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>ruby -- "$TM_SUPPORT_PATH/bin/checknest.rb" '(?x) (functor|structure) (.+) = (?=\s*struct)' 'end' 'end (* $1 $2 *)' -n$TM_LINE_NUMBER</string>
+	<string>ruby18 -- "$TM_SUPPORT_PATH/bin/checknest.rb" '(?x) (functor|structure) (.+) = (?=\s*struct)' 'end' 'end (* $1 $2 *)' -n$TM_LINE_NUMBER</string>
 	<key>input</key>
 	<string>document</string>
 	<key>keyEquivalent</key>
